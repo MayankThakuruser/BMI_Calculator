@@ -2,14 +2,14 @@
 #include <string>
 using namespace std; 
 
-struct Measurment {
+struct Measurment { 
     double weight{ 0 };
     double height{ 1 };
     int age{};
     string gender{};
-};
+}; // used struct instead of class to make information public as default
 
-void personalInformation( Measurment& m)
+void personalInformation( Measurment& m) 
 {
     cout << "Enter Your Gender = ";
     cin >> m.gender;
@@ -78,12 +78,6 @@ void checkWeightStatus(double bmi)
         cout << "Just JUmpp the f*k off dude";
 
 }
-
-
-
-
-
-
 int main() {
     Measurment user;
     personalInformation(user); // Input data only ONCE
@@ -98,3 +92,4 @@ int main() {
 
     return 0;
 }
+
